@@ -1,6 +1,7 @@
 {
   "name": "koishi-plugin-receptionist",
-  "description": "",
+  "description": "自用插件",
+  "license": "MIT",
   "version": "0.0.1",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -8,14 +9,19 @@
     "lib",
     "dist"
   ],
-  "license": "MIT",
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furryaxw/koishi-plugin-receptionist.git"
+  },
+  "homepage": "https://github.com/furryaxw/koishi-plugin-receptionist",
+  "bugs": {
+    "url": "https://github.com/furryaxw/koishi-plugin-receptionist/issues"
+  },
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "4.18.9"
   }
