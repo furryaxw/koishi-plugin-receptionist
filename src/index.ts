@@ -125,7 +125,7 @@ async function isUserAdmin(session: Session, userId: string): Promise<boolean> {
         if (!memberInfo) return false;
 
         const adminRoles = ["owner", "admin", "administrator"];
-        const memberRoles = [...(memberInfo.roles || [])].flat().filter(Boolean);
+        const memberRoles = (memberInfo.roles || []).map(r => r.name).filter((n): n is string => !!n);
 
         for (const role of memberRoles) {
             if (adminRoles.includes(role.toLowerCase())) return true;
