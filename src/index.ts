@@ -1,6 +1,10 @@
 import {Context, h, Schema, Session} from 'koishi'
 
 export const name = 'receptionist'
+export const inject = {
+    required: ['database'],
+    optional: [],
+};
 
 export interface Config {
     isAt: boolean
